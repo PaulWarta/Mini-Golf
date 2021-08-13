@@ -1,0 +1,169 @@
+:root {
+    --button-color: rgb(79, 79, 255);
+    --dropshadow: rgb(201, 201, 201);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 2px 5px 17px 2px var(--dropshadow);
+    padding: 20px;
+    border-radius: 3px;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.AuwahlNeueAlteBahnButtons {
+    width: 45%;
+    margin: 3%;
+}
+
+.miniContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Teilnehmer_Text {
+    height: fit-content;
+}
+
+h2 {
+    font-size: 0.8rem;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#TitleForInitialSetup {
+    font-size: 1.1rem;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.InitPageH1 {
+    margin-bottom: 0;
+}
+
+input {
+    border-radius: 3px;
+    box-shadow: 2px 5px 17px 2px var(--dropshadow);
+}
+
+button {
+    background-color: var(--button-color);
+    box-shadow: 2px 5px 17px 2px var(--dropshadow);
+    border-radius: 3px;
+    color: rgb(233, 233, 233);
+}
+
+#addName #Name_input_field {
+    height:  100%;
+}
+
+#neueBahn {
+    color: rgb(23, 23, 23);
+    background-color: rgb(255, 255, 255);
+}
+
+#reset {
+    border-radius: 0px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-size: 0.7rem;
+}
+
+#SpielStarten {
+    margin-top: 15px;
+}
+
+#addName {
+    font-size: 0.7rem;
+}
+
+#Name_input_field {
+    width: 120px;
+}
+
+#Namen_Container {
+    width: 90%;
+    left: 10%;
+    text-align: left;
+}
+
+.container2 {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#StarteDasSpiel {
+    margin-top: 15px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coloumn {
+    background-color: rgb(238, 238, 238);
+    font-size: 0.8rem;
+    width: 95%;
+    text-align: center;
+}
+
+#main {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Game_Input {
+    border-radius: 3px;
+    border: 1px solid black;
+    left: 1%;
+    width: 98%;
+    box-shadow: none;
+}
+
+
