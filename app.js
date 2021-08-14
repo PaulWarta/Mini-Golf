@@ -13,8 +13,11 @@ function showInitialSetup () {
 if (localStorage.getItem("already_played") === null) {
     showInitialSetup();
 } else {
+    document.getElementById("restoreLastGame").style.display = "block";
     document.getElementById("already_played").style.display = "flex";
+    if (localStorage.getItem("already_played") != null) {document.getElementById("restoreLastGame").style.display = "block"} else {document.getElementById("restoreLastGame").style.display = "none"}
 }
+
 
 function calc1() {
     let value = 0;
@@ -218,6 +221,7 @@ function resumeFromLast () {
     console.log(rounds);
     console.log(players);
     console.log(player_counter);
+    document.getElementById("container_initial_setup").style.display = "none";
     document.getElementById("already_played").style.display = "none";
     createGameStructure();
 }
@@ -226,4 +230,5 @@ function reset () {
     localStorage.clear();
     document.getElementById("already_played").style.display = "none";
     document.getElementById("container_initial_setup").style.display = "flex";
+    if (localStorage.getItem("already_played") != null) {document.getElementById("restoreLastGame").style.display = "block"} else {document.getElementById("restoreLastGame").style.display = "none"}
 }
